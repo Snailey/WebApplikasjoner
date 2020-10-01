@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HIOF To Do</title>
+        <link href="style.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                    <div id="logo">HIOF</div>
+                    <div id="username">User user</div>
+            </div>
+        </header>
+        <main>
+            <div class="main">
+                <button id="btntodo">+ Todo</button>
+            </div>
+            <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button id="modalclose" type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">New todo</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <label for="title">Title</label><br>
+                            <input class="input" type="text" id="modaltitle" name="title" placeholder="Todo title"><br><br>
+                            <label for="description" >Description  <label id = "count">(30 characters left)</label></label><br>
+                            <input class="input" type="text" id="modaldescription" name="Description" placeholder="Lorem ipsum dollar sitane" onkeyup="countChars(this);"><br><br>
+                            <label for="author">Author</label><br>
+                            <input class="input" type="text" id="modalauthor" name="author" placeholder="Autor Author"><br><br>
+                            <input class="input" id="modalsubmit" type="submit" value="Create" onclick="addtodo()">
+                        </form> 
+                  </div>
+                </div>
+            </div>
+            <div id="cards" class="main">
+                <div id="card1" class="column" >
+                    <h2 id="card1title">Todotitle</h2>
+                    <p id="card1desc">I'm baby sriracha hot chicken mixtape pabst organic air ...</p>
+                    <button class="btn btndelete" onclick="removecard1()">Delete</button>
+                    <button class="btn btncomplete" onclick="done1()">Complete</button>
+                </div>
+                <div id="card2" class="column" >
+                    <h2 id="card2title">Todotitle</h2>
+                    <p id="card2desc">I'm baby sriracha hot chicken mixtape pabst organic air ...</p>
+                    <button class="btn btndelete" onclick="removecard2()">Delete</button>
+                    <button class="btn btncomplete" onclick="done2()">Complete</button>
+                </div>
+                <div id="card3" class="column" >
+                    <h2 id="card3title">Todotitle</h2>
+                    <p id="card3desc">I'm baby sriracha hot chicken mixtape pabst organic air ...</p>
+                    <button class="btn btndelete" onclick="removecard3()">Delete</button>
+                    <button class="btn btncomplete" onclick="done3()">Complete</button>
+                </div>
+            </div>
+            <div class="main">
+                <div id="complete">Completed todos</div>
+                <form id="date">
+                    <input type="checkbox" id="filterdate">
+                    <label id="grey" for="filterdate"> Filter by date</label><br>
+                </form>    
+                <table id="tablecomplete">
+                    <tr>
+                        <th style="width:10px"></th>
+                        <th style="width:20%">Title</th>
+                        <th style="width:20%">Author</th>
+                        <th style="width:40%">Description</th>
+                        <th style="width:20%">Completed date</th>
+                    </tr>                    
+                </table>
+            </div>        
+        </main>
+        <footer>
+        </footer> 
+        
+            
+            <script src="script.js"></script>
+   
+        
+    </body>
+</html>

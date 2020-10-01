@@ -1,0 +1,32 @@
+Chrome Dev tools
+
+HIOF.no
+
+
+ 
+Antall bilder på forsiden:
+	3 jpg bilder
+
+Lastetid med og uten cache:
+	med 308ms
+	uten 645ms
+
+Audit:
+	Preformance: 92
+	Accessibility: 84
+	Best Practices: 92
+	SEO: 90
+
+
+Antall eksterne requests:
+	30
+
+
+Hva er "Content-Type" i response header på https://www.hiof.no/tjenester/ :
+	text/html;charset=utf-8
+
+Hva er "Cache-Control" i request header på https://www.hiof.no/tjenester/ :
+	max-age=0
+
+Hvilken protokoll bruker den siden:
+	https

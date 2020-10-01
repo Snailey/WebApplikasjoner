@@ -1,0 +1,18 @@
+body {
+
+    margin: 0;
+
+}
+
+.background-image {
+
+    height:20vh;
+    width:20vw; 
+    
+    background-color: red;
+    background-image: url(skole.jpg);
+    background-size: cover;
+    
+    background-blend-mode: screen;
+
+}

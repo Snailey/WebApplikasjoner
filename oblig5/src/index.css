@@ -1,0 +1,285 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  height: 63px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 10px #00000019;
+  width: 100%;   
+}
+
+
+#logo {
+  float: left;
+  padding-top: 19px;
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: bolder; 
+}
+
+
+#username {
+  float: right;
+  padding-top: 19px;
+  padding-right: 30px;
+  font-size: 20px;
+}
+
+.main {
+  width: 60%;
+  margin: 50px auto;
+}
+
+#cards {
+  display : flex;
+justify-content : space-between;
+align-items: center;
+}
+
+#btntodo {
+  background-color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 23px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 183px; 
+  height: 51px;
+  border: 1px solid #333333;
+  margin-left:0; margin-right:auto;
+}
+
+#btntodo:hover, #btntodo:focus, #btntodo:active, #btntodo.active, .open>.dropdown-toggle.btntodo {
+  background-color: #56D4C2;
+  filter:drop-shadow(0px 8px 16px #5DD3D829);
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 25px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 16px #5DD3D829;
+  border-radius: 8px;
+  opacity: 1;
+}
+
+#complete {
+  text-align: left;
+  padding-top: 50px;
+  width: 100%;
+  font-size: 16;
+  font-weight: bold;
+}
+
+#date {
+  float: right;
+  padding-bottom: 10px;
+  padding-right: 30px;
+}
+
+#grey {
+  color: grey;
+}
+
+
+.btndelete {
+  background-color: #EF3340;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 77px;
+  float: right;
+}
+
+.btncomplete {
+  background-color: #56D4C2;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 77px; 
+  float: right;
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn.active, .open>.dropdown-toggle.btn {
+  filter:opacity(30%);
+}
+
+#submit {
+  background-color: #56D4C2;
+  border: none;
+  color: white;
+  
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 250px;
+}
+  
+.input {
+  width: 100%; 
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 40;
+  
+}
+
+#modalclose {
+  float: right;
+}
+
+form {
+  text-align: left;
+  
+}
+
+#modalsubmit {
+  width: 100%;
+  padding: 5px, auto;
+  margin-top: 15px;
+  border-radius: 0px;
+}
+
+label {
+ font-size: 12px; 
+ height: 40;
+ 
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.table {
+  padding-left: 0;
+  width:100%;
+}
+
+.thead {
+  display : flex;
+  justify-content : space-between;
+  width:100%;
+  background-color: #E6E6E6;
+} 
+
+.row {
+  display : flex;
+  border-bottom: 0.1px solid #333333;
+  width:100%;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+
+.title {
+  padding: 5px;
+  text-align: center;
+  width: 20%;
+}
+
+.author {
+  padding: 5px;
+  text-align: center;
+  width: 20%;
+}
+
+.description {
+  padding: 5px;
+  text-align: center;
+  width: 40%;
+}
+
+.date {
+  padding: 5px;
+  text-align: center;
+  width: 20%;
+}
+
+.myoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 326px;
+  height: 378px;
+  border-radius: 8px;
+}
+
+.modal-header {
+  border-bottom: 1px solid grey;
+}
+
+.modal-body {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;    
+}

@@ -1,0 +1,25 @@
+Oppgave 1
+Bash cardio
+
+
+Lage mappe:
+
+	mkdir mappe
+
+Lage fil i mappen:
+
+	touch /mappe/fil.txt	
+
+Legge tekst til filen:
+
+	cat >> fil.txt <<<'teksten som skal legges til etter nåværende innhold i filen'
+
+Endre den fra kommandolinjen:
+
+innhold:	cat > fil.txt <<<'teksten som skal stå i filen etter endring'
+filnavn: 	mv fil.txt nyttnavn.txt
+
+
+Slette filen:
+
+	rm fil.txt
