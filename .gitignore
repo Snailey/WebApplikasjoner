@@ -2,8 +2,12 @@
 
 # dependencies
 /node_modules
+/oblig6/frontend/node_modules
+/oblig6/backend/node_modules
 /.pnp
 .pnp.js
+/oblig6/frontend/yarn-lock.json
+/oblig6/backend/yarn-lock.json
 
 # testing
 /coverage
@@ -21,3 +25,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
+oblig6/Backend/.vscode/settings.json
+oblig6/Backend/yarn.lock
+oblig6/frontend/yarn.lock
+package-lock.json
+package-lock.json
